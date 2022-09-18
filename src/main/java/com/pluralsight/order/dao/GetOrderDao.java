@@ -71,6 +71,6 @@ public class GetOrderDao {
      * @throws SQLException In case of an error
      */
     private ResultSet createResultSet(PreparedStatement ps) throws SQLException {
-        return ps.getResultSet();
+        return ps.executeQuery();
     }
 }
